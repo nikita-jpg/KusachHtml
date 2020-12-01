@@ -1,0 +1,97 @@
+html, body {padding:0; margin:0;}
+
+:root{
+  --test:3px
+}
+
+body{
+  background-color: #101010;
+  padding-right: 8px;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;   
+  height: 60px;   
+  background-color: rgba(0, 0, 0, 0.8);  
+  }
+  #logo{
+    margin-left: 10px;
+  }
+#title {
+  color: aliceblue;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: x-large;
+}
+#plug {
+  width: 120px;
+  height: 120px;
+  background:  rgba(0, 0, 0, 0);
+}
+.subHeader{
+  margin-bottom: 4px;
+  margin-top: 4px;
+  margin-right: var(--test);
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background: #101010;
+}
+
+#subTitle{
+  width: 100px;
+  height: 60px;
+  background: #101010;
+
+  font-family: 'RobotoLight',Arial,sans-serif;
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#subTitle:hover{background: #145FDE;}
+
+#subBtn{
+  width: 120px;
+  height: 60px;
+  background:  #23a8f5;
+
+  color: #fff;
+  line-height: 60px;
+  font-family: 'RobotoLight',Arial,sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+#subBtn:hover{background: #145FDE;}
+
+.good{
+  display: flex; 
+  width: 100%;
+  height: 300px;
+}
+.film{
+  margin: var(--test);
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(92, 83, 83);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background: #333a47;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background: #4A5CD9;
+}
+
