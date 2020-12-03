@@ -1,12 +1,27 @@
 html, body {padding:0; margin:0;}
 
 :root{
-  --test:3px
+  --test:3px;
+  --m_color:#145FDE;
+  --m_color_hover:#23a8f5;
 }
 
 body{
   background-color: #101010;
   padding-right: 8px;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background: #333a47;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background: #4A5CD9;
 }
 header{
   display: flex;
@@ -47,51 +62,73 @@ header{
 
   font-family: 'RobotoLight',Arial,sans-serif;
   font-size: 24px;
-  text-align: center;
+  text-align: left;
   line-height: 60px;
   color: #fff;
   padding-left: 10px;
   padding-right: 10px;
 }
-#subTitle:hover{background: #145FDE;}
+#subTitle:hover{background: var(--m_color_hover);}
 
 #subBtn{
   width: 120px;
   height: 60px;
-  background:  #23a8f5;
+  background:  var(--m_color);
 
   color: #fff;
   line-height: 60px;
   font-family: 'RobotoLight',Arial,sans-serif;
   font-size: 24px;
   text-align: center;
+  cursor: pointer;
 }
-#subBtn:hover{background: #145FDE;}
+#subBtn:hover{background: var(--m_color_hover);}
 
 .good{
-  display: flex; 
+  display: flex;
+  justify-content: space-around;
   width: 100%;
+  min-width: 700px;
   height: 300px;
 }
 .film{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: var(--test);
   margin-top: 0;
-  width: 100%;
+  width: calc(100% - 20px);
   height: 100%;
-  background: rgb(92, 83, 83);
+  background-size: cover;
+  color:transparent;
 }
 
-body::-webkit-scrollbar {
-  width: 8px;
+.film:hover{
+  box-shadow:inset 0px 0px 0px 1px var(--m_color_hover);
+  cursor: pointer;
+
+  color: white;
+  font-family: 'RobotoLight', Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+.info{
+  height: 40px;
+  width: 100%;
+  font-family: 'RobotoLight', Arial, sans-serif;
+  font-size: 18px;
+  background-color: transparent;
+  color: transparent;
+  line-height: 40px;
+}
+.film:hover .info{
+  background-color: var(--m_color_hover);
+  color: #ffffff;
+}
+.film:hover .info:first-child{
+  background-color: transparent;
+  color: #ffffff;
 }
 
-body::-webkit-scrollbar-track {
-  border-radius: 0px;
-  background: #333a47;
-}
 
-body::-webkit-scrollbar-thumb {
-  border-radius: 0px;
-  background: #4A5CD9;
-}
 
