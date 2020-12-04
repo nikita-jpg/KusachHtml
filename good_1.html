@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заглушка</title>
     <link rel="stylesheet" href="good.css">
+    <link rel="stylesheet" href="fonts_colors_data.css">
 </head>
 <body>
     <header class="header">
 
-        <div id="logo">
-             
+        <a href="index.html" >
+             <img src="back.svg" id="logo"></a>
         </div>
+
         <div id="title">
-            Тони Монтана
         </div>
         <div id="plug"></div>
     
     </header>
 
+<div id="content">
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -30,14 +32,14 @@
     </div>
   
     <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="2.jpg">
-    </div>
+        <div class="numbertext">2 / 3</div>
+        <div class="photo"></div>
+      </div>
   
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="3.jpg">
-    </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <div class="photo"></div>
+      </div>
   
     <!-- Next and previous buttons -->
 
@@ -50,13 +52,28 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-  <script src="good.js"></script>
+
 
   <div class="hero_info">
-      <p>
-        Антонио «Тони» Монтана (англ. Antonio «Tony» Raimundo Montana) — персонаж, созданный американским режиссёром и сценаристом Оливером Стоуном, главный герой криминальной драмы Брайана Де Пальмы «Лицо со шрамом», вышедшей на экраны в 1983 году. Роль Тони Монтаны, которую в фильме исполнил Аль Пачино, принесла актёру номинацию на премию «Золотой глобус»[1]. Тони Монтана — амбициозный гангстер, эмигрировавший с Кубы, осевший в Майами и сделавший головокружительную карьеру в наркобизнесе.
-      </p>
+      <pre id="hero_info_text"></pre>
   </div>
 
+  <div class="btns">
+      <div class="btn">
+          <p>Создатель</p>
+          <a href="https://ru.wikipedia.org/wiki/Стоун,_Оливер" target="_blank" id="btn_maker">Ольвер Стоун</a>
+      </div>
+      <div class="btn">
+        <p>Исполнитель</p>
+        <a href="https://ru.wikipedia.org/wiki/Стоун,_Оливер" target="_blank" id="btn_actor">Аль Пачино</a>
+    </div>
+    <div class="btn">
+        <p>Фильм</p>
+        <a href="https://ru.wikipedia.org/wiki/Стоун,_Оливер" target="_blank" id="btn_film">Лицо со шрамом</a>
+    </div>
+  </div>
+
+</div>
+  <script src="good.js"></script>
 </body>
 </html>

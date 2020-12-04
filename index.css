@@ -1,10 +1,6 @@
 html, body {padding:0; margin:0;}
 
-:root{
-  --test:3px;
-  --m_color:#145FDE;
-  --m_color_hover:#23a8f5;
-}
+
 
 body{
   background-color: #101010;
@@ -36,14 +32,9 @@ header{
     margin-left: 10px;
   }
 #title {
-  color: aliceblue;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: x-large;
-}
-#plug {
-  width: 120px;
-  height: 120px;
-  background:  rgba(0, 0, 0, 0);
+  color: var(--white);
+  font-family: var(--font);
+  font-size: 2rem;
 }
 .subHeader{
   margin-bottom: 4px;
@@ -64,27 +55,27 @@ header{
   font-size: 24px;
   text-align: left;
   line-height: 60px;
-  color: #fff;
+  color: var(--white);
   padding-left: 10px;
   padding-right: 10px;
 }
-#subTitle:hover{background: var(--m_color_hover);}
+#subTitle:hover{background: var(--blue_hover);}
 
 #subBtn{
   width: 120px;
   height: 60px;
-  background:  var(--m_color);
+  background:  var(--blue);
 
-  color: #fff;
+  color:var(--white);
   line-height: 60px;
   font-family: 'RobotoLight',Arial,sans-serif;
   font-size: 24px;
   text-align: center;
   cursor: pointer;
 }
-#subBtn:hover{background: var(--m_color_hover);}
+#subBtn:hover{background: var(--blue_hover);}
 
-.good{
+.hero{
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -95,7 +86,7 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: var(--test);
+  margin: 2px;
   margin-top: 0;
   width: calc(100% - 20px);
   height: 100%;
@@ -104,10 +95,10 @@ header{
 }
 
 .film:hover{
-  box-shadow:inset 0px 0px 0px 1px var(--m_color_hover);
+  box-shadow:inset 0px 0px 0px 1px var(--blue_hover);
   cursor: pointer;
 
-  color: white;
+  color: var(--white);
   font-family: 'RobotoLight', Arial, sans-serif;
   font-size: 14px;
   text-align: center;
@@ -122,13 +113,13 @@ header{
   line-height: 40px;
 }
 .film:hover .info{
-  background-color: var(--m_color_hover);
-  color: #ffffff;
+  background-color: var(--blue_hover);
+  color: var(--white);
 }
 .film:hover .info:first-child{
   background-color: transparent;
-  color: #ffffff;
+  color: var(--white);
+  line-height: 25px;
 }
-
 
 

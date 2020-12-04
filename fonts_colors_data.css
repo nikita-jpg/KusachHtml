@@ -1,0 +1,9 @@
+:root{
+    --blue:#145FDE;
+    --blue_hover:#23a8f5;
+    --font:'Montserrat,Quadrat Grotesk New',sans-serif;
+    --white:#fff;
+  }
+#plug{
+  width: 34px;
+}
