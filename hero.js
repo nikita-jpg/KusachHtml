@@ -10,7 +10,7 @@ for(let i=0;i<images.length; i++)
 //Кнопка покупок
 let basket = document.querySelector("#basket");
 basket.addEventListener('click', function(e){     
-  document.body.appendChild(souvenirs);
+  openBasket();
 });
 
 //Текст о герое
