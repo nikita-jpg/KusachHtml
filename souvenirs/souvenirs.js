@@ -1,17 +1,30 @@
 let myBackground;
 let myWindow;
 
-let elementWidth = 1;
-let elementHeight = 1;
+let elementWidth = "190px";
+let elementHeight = "300px";
 let quanityRow = 1;
-let quanityElInRow = 1;
+let quanityInRow = 1;
 
 
-function fillWindow(){
+function fillSouvWindow(){
     myWindow.querySelector(".dialog_title").querySelector("p").textContent="Сувениры";
     myWindow.querySelector(".dialog_title").querySelector("img").addEventListener('click', function(e){     
         souvenirs_close();
-      });
+    });
+
+    let width = screen.width;
+    if(width<768){
+        quanityRow = 10;
+        quanityInRow = 1;
+    }else if (width<1280){
+        quanityRow = 10;
+        quanityInRow = 4;
+    }else{
+        quanityRow = 10;
+        quanityInRow = 5;
+    }
+
     for(let i=0;i<quanityRow;i++)
         myWindow.append(getLine());
 }
@@ -19,7 +32,7 @@ function getLine(){
     let myLine = document.createElement('div');
     myLine.classList.add("souvenirs_row");
 
-    for(let i=0;i<quanityElInRow;i++)
+    for(let i=0;i<quanityInRow;i++)
         myLine.append(getElement());
 
     return myLine;
@@ -67,13 +80,11 @@ function getElement()
     infoBuy.style.height = "30px";
     infoBuy.textContent = "Купить";
     infoBuy.classList.add("souvenirs_info_buy");
+    infoBuy.addEventListener('click', function(e){     
+        buy();});
     info.append(infoBuy);
-    info.addEventListener('click', function(e){     
-        buy();
-      });
 
     element.append(info);
-
     return element;
 }
 
@@ -82,8 +93,7 @@ function openBasket()
     document.body.style.overflow = "hidden";
     myBackground = getBlurBack();
     myWindow = getWindow();
-    myWindow.id = "souvenirs_window";
-    fillWindow();
+    fillSouvWindow();
     myBackground.appendChild(myWindow);
     document.body.append(myBackground);
 }
