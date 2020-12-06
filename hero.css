@@ -18,19 +18,20 @@ header{
  }
 #title {
     color: var(--white);
-    font-family: 'Montserrat,Quadrat Grotesk New',sans-serif;
+    font-family: var(--font);
     font-size: 2rem;
 }
-#logo{
-    background-image: url("back.svg");
+.logo{
     background-size: cover;
     width: 24px;
     height: 24px;
-    margin-left: 10px;
-    fill: white;
 }
-#logo:hover{
+.logo:first-child{
+    margin-left: 8px;
+}
+.logo:last-child{
     cursor: pointer;
+    margin-right: 16px;
 }
 
 #content{
