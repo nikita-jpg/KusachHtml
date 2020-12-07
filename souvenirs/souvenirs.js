@@ -37,7 +37,7 @@ function fillSouvWindow(persId){
             myLine.classList.add("souvenirs_row");
         }
     }
-    alert(j);
+
     if(j%maxQuanityInRow!=0)
     {
     for(let i=0;i< maxQuanityInRow - j%maxQuanityInRow;i++)
@@ -69,7 +69,6 @@ function getElement(souvId)
     //Картинка товара
     let img = document.createElement('div');
     img.style.backgroundImage = souvenirsList[numInList].array[qurSouvNum].img;
-    qurSouvNum++
     img.style.width = "160px";
     img.style.height = "160px";
     img.classList.add("souvenirs_img");
@@ -85,7 +84,7 @@ function getElement(souvId)
     let infoPrice = document.createElement("p");
     infoPrice.style.width = "100%";
     infoPrice.style.height = "20px";
-    infoPrice.textContent = "4500 ₽";
+    infoPrice.textContent = souvenirsList[numInList].array[qurSouvNum].price;
     infoPrice.classList.add("souvenirs_info_price","souvenirs_p");
     info.append(infoPrice);
 
@@ -93,7 +92,7 @@ function getElement(souvId)
     let infoText = document.createElement("p");
     infoText.style.width = "100%";
     infoText.style.height = "40px";
-    infoText.textContent = "ТекстеТекстеТексте\nТекстеТекстеТексте";
+    infoText.textContent = souvenirsList[numInList].array[qurSouvNum].text;
     infoText.classList.add("souvenirs_info_text","souvenirs_p");
     info.append(infoText);
 
@@ -108,6 +107,7 @@ function getElement(souvId)
     info.append(infoBuy);
 
     element.append(info);
+    qurSouvNum++
     return element;
 }
 
