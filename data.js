@@ -115,3 +115,8 @@ let heroes = [
         film: "https://www.kinopoisk.ru/film/843649/",
     }
 ]
+
+let subTitles = [
+    "Злодеи",
+    "Герои"
+]
