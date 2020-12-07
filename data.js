@@ -120,3 +120,56 @@ let subTitles = [
     "Злодеи",
     "Герои"
 ]
+
+let souvenirsList = [
+    {
+        id: "5",
+        array: [
+            {
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            }
+        ]
+    }
+]

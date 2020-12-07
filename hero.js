@@ -10,7 +10,7 @@ for(let i=0;i<images.length; i++)
 //Кнопка покупок
 let basket = document.querySelector("#basket");
 basket.addEventListener('click', function(e){     
-  openBasket();
+  openBasket(id);
 });
 
 let width = screen.width;
@@ -19,10 +19,10 @@ if(width<768){
   btns.style.WebkitFlexDirection = "column";
 }else if (width<1280){
     quanityRow = 10;
-    quanityInRow = 4;
+    maxQuanityInRow = 4;
 }else{
     quanityRow = 10;
-    quanityInRow = 5;
+    maxQuanityInRow = 5;
 }
 
 //Текст о герое
