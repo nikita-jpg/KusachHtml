@@ -29,7 +29,7 @@ header{
 }
 .subHeader{
   margin-bottom: 4px;
-  margin-top: 4px;
+  margin-top: 5px;
   display: flex;
   justify-content: space-between;
   height: 40px;
@@ -53,7 +53,7 @@ header{
   width: 100%;
   max-width: 1700px;
   height: 300px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .film{
   display: flex;

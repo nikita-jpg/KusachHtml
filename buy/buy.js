@@ -1,6 +1,6 @@
 let buyWindow;
 let buyBack;
-let width;
+let widthBuy;
 let adresses = ["проспект Вернадского, дом 86, стр.1","Мичуринский проспект, д. 12, корпус 2","ул. Студенческая, дом 33, корп. 3."];
 
 
@@ -17,7 +17,7 @@ function makePayment(){
     //Контейнер для оплаты
     let payment = document.createElement('div');
     payment.classList.add("payment");
-    payment.style.width = width;
+    payment.style.width = widthBuy;
 
     //Поле "Способ оплаты"
     let paymentText = document.createElement('p');
@@ -46,7 +46,7 @@ function makeAddress(){
     //Контейнер для адресов
     let adress = document.createElement('div');
     adress.classList.add("adress");
-    adress.style.width = width;
+    adress.style.width = widthBuy;
     adress.style.height = "200px";
     adress.style.maxHeight = "170px";
     adress.textContent = "Адреса для самовывоза";
@@ -73,11 +73,11 @@ function makePersInf(){
 
 function fillByWidth(){
     if(screen.width<768){
-        width = "310px";
+        widthBuy = "310px";
     }else if (screen.width<1280){
-        width = "350px";
+        widthBuy = "350px";
     }else{
-        width = "400px";
+        widthBuy = "400px";
     }
 }
 

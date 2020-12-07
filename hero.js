@@ -13,6 +13,18 @@ basket.addEventListener('click', function(e){
   openBasket();
 });
 
+let width = screen.width;
+let btns = document.querySelector(".btns");
+if(width<768){
+  btns.style.WebkitFlexDirection = "column";
+}else if (width<1280){
+    quanityRow = 10;
+    quanityInRow = 4;
+}else{
+    quanityRow = 10;
+    quanityInRow = 5;
+}
+
 //Текст о герое
 document.querySelector("#hero_info_text").textContent = heroes[id].info;
 

@@ -167,6 +167,7 @@ header{
 .btns{
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     width: 100%;
     max-width: 1000px;
     margin-left: auto;
