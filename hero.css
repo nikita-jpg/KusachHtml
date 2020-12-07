@@ -4,6 +4,19 @@ body{
     background-color: #101010;
     padding-right: 8px;
   }
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background: #333a47;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background: #4A5CD9;
+  }
 header{
     position: fixed;
     top: 0;  
