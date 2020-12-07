@@ -123,6 +123,381 @@ let subTitles = [
 
 let souvenirsList = [
     {
+        id: "0",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+    {
+        id: "1",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+    {
+        id: "2",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+    {
+        id: "3",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+    {
+        id: "4",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+    {
         id: "5",
         array: [
             {
@@ -196,5 +571,681 @@ let souvenirsList = [
                 img: "url('souvenirs/souvenirs_img/5_13.jpg')",
             },
         ]
-    }
+    },
+    {
+        id: "6",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+    {
+        id: "7",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+    {
+        id: "8",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+    {
+        id: "9",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+    {
+        id: "10",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+    {
+        id: "11",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+    {
+        id: "12",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+    {
+        id: "13",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+    {
+        id: "14",
+        array: [
+            {
+                price: "400₽",
+                text: "Чехольчик для айфончика",
+                img: "url('souvenirs/souvenirs_img/5_0.png')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_1.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_2.png')",
+            },
+            {
+                price: "800₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_3.jpg')",
+            },
+            {
+                price: "200₽",
+                text: "Блокнотик",
+                img: "url('souvenirs/souvenirs_img/5_4.png')",
+            },
+            {
+                price: "1000₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_5.png')",
+            },
+            {
+                price: "600₽",
+                text: "Коврик для мышуи",
+                img: "url('souvenirs/souvenirs_img/5_6.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_7.jpg')",
+            },
+            {
+                price: "150₽",
+                text: "Магнитик",
+                img: "url('souvenirs/souvenirs_img/5_8.jpg')",
+            },
+            {
+                price: "1500₽",
+                text: "Худи",
+                img: "url('souvenirs/souvenirs_img/5_9.jpg')",
+            },
+            {
+                price: "800₽",
+                text: "Часы",
+                img: "url('souvenirs/souvenirs_img/5_10.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Чехольчики для паспорт",
+                img: "url('souvenirs/souvenirs_img/5_11.jpg')",
+            },
+            {
+                price: "700₽",
+                text: "Футболочка",
+                img: "url('souvenirs/souvenirs_img/5_12.jpg')",
+            },
+            {
+                price: "500₽",
+                text: "Кружечка",
+                img: "url('souvenirs/souvenirs_img/5_13.jpg')",
+            },
+        ]
+    },
+
 ]
