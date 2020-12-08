@@ -5,12 +5,11 @@ fillHeroesWindow();
 
 
 function fillHeroesWindow(){
-  let width = screen.width;
 
-  mainPage.appendChild(makeSubHeader(0));
-  mainPage.appendChild(addFilmBlock());
-  mainPage.appendChild(makeSubHeader(1));
-  mainPage.appendChild(addFilmBlock());
+  mainPage.appendChild(getSubHeader(0));
+  mainPage.appendChild(getFilmBlock());
+  mainPage.appendChild(getSubHeader(1));
+  mainPage.appendChild(getFilmBlock());
 
     //Заполняем фильмы
     let films = document.querySelectorAll('.film');
@@ -27,7 +26,7 @@ function fillHeroesWindow(){
 
 }
 
-function makeSubHeader(i){
+function getSubHeader(i){
   let subHeader = document.createElement('div');
   subHeader.classList.add('subHeader');
   subHeader.textContent = subTitles[i];
@@ -35,16 +34,15 @@ function makeSubHeader(i){
   return subHeader;
 }
 
-function addFilmBlock(){
+function getFilmBlock(){
   let row = document.createElement('div');
   row.classList.add('filmBlock');
-  for(let i=0;i<filmsInBlock;i++){
-    row.append(getFilm(false));
-  }
+  for(let i=0;i<filmsInBlock;i++)
+    row.append(getFilm());
   return row;
 }
 
-function getFilm(isFull){
+function getFilm(){
 
   let film = document.createElement('div');
   film.classList.add('film');

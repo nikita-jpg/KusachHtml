@@ -1,25 +1,28 @@
-html, body {padding:0; margin:0;}
+*{padding:0; margin:0;}
 
 body{
   background-color: #101010;
 }
-body{
-    background-color: #101010;
-    padding-right: 8px;
-  }
-  body::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  body::-webkit-scrollbar-track {
-    border-radius: 0px;
-    background: #333a47;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    border-radius: 0px;
-    background: #4A5CD9;
-  }
+#mainPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+}
+#mainPage::-webkit-scrollbar {
+  width: 8px;
+}
+
+#mainPage::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background: #333a47;
+}
+
+#mainPage::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background: #4A5CD9;
+}
 header{
   position: fixed;
   top: 0;  
@@ -41,12 +44,7 @@ header{
   font-size: 2rem;
 }
 
-#mainPage{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-}
+
 .subHeader{
   margin-bottom: 4px;
   margin-top: 5px;
@@ -82,9 +80,7 @@ header{
   justify-content: space-between;
   margin: 2px;
   margin-top: 0;
-  width: calc(100% - 20px);
-  max-width: 250px;
-  min-width: 200px;
+  width: 200px;
   height: 300px;
   background-size: cover;
   color:transparent;

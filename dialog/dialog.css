@@ -68,7 +68,7 @@
     cursor: pointer;
 }
 
-/* Заблюренный фон */
+/* Фон */
 .dialog_blur_back{
     position: fixed;
     top: 0;
@@ -79,5 +79,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(4px); 
+
+}
+@supports (backdrop-filter: blur(4px)){
+    .dialog_blur_back{
+        backdrop-filter: blur(4px);
+    }
+}
+@supports not (backdrop-filter: blur(4px)){
+    .dialog_blur_back{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
 }

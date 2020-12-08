@@ -16,10 +16,10 @@ basket.addEventListener('click', function(e){
   openBasket(id);
 });
 
-  makeHeroBtns();
+  makeHeroData();
 }
 
-function makeHeroBtns(){
+function makeHeroData(){
 
   //Текст о герое
   document.querySelector("#hero_info_text").textContent = heroes[id].info;
