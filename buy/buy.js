@@ -1,6 +1,5 @@
 let buyWindow;
 let buyBack;
-let widthBuy;
 let adresses = ["проспект Вернадского, дом 86, стр.1","Мичуринский проспект, д. 12, корпус 2","ул. Студенческая, дом 33, корп. 3."];
 
 
@@ -17,7 +16,6 @@ function makePayment(){
     //Контейнер для оплаты
     let payment = document.createElement('div');
     payment.classList.add("payment");
-    payment.style.width = widthBuy;
 
     //Поле "Способ оплаты"
     let paymentText = document.createElement('p');
@@ -46,16 +44,12 @@ function makeAddress(){
     //Контейнер для адресов
     let adress = document.createElement('div');
     adress.classList.add("adress");
-    adress.style.width = widthBuy;
-    adress.style.height = "200px";
-    adress.style.maxHeight = "170px";
     adress.textContent = "Адреса для самовывоза";
 
     //Маркированный список адресов
     let list = document.createElement('ul');
     for (let i=0;i<3;i++){
         let elem = document.createElement('li');
-        elem.style.height = "35px";
         elem.textContent = adresses[i];
         list.appendChild(elem);
     }
@@ -71,23 +65,12 @@ function makePersInf(){
     return phone;
 }
 
-function fillByWidth(){
-    if(screen.width<768){
-        widthBuy = "310px";
-    }else if (screen.width<1280){
-        widthBuy = "350px";
-    }else{
-        widthBuy = "400px";
-    }
-}
 
 function buy(){
-    fillByWidth();
-
     sentWindow = getWindow();
     sentWindow.querySelector(".dialog_title").querySelector("p").textContent="Покупка";
     sentWindow.querySelector(".dialog_title").querySelector("img").addEventListener('click', function(e){     
-        buy_close();});
+        buyClose();});
 
     fillBuyWIndow();
     sentWindow.appendChild(buyWindow)
@@ -98,6 +81,6 @@ function buy(){
     document.body.append(buyBack);
 }
 
-function buy_close(){
+function buyClose(){
     document.body.removeChild(buyBack)
 }

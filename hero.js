@@ -1,11 +1,14 @@
 let id = localStorage.getItem("id");
-const souvenirs = document.createElement('script');
-souvenirs.src = 'souvenirs/souvenirs.js';
 
+fillHeroWindow();
+
+function fillHeroWindow(){
 document.querySelector("#title").textContent = heroes[id].name;
 images = document.querySelectorAll(".photo");
 for(let i=0;i<images.length; i++)
   images[i].style.backgroundImage = 'url("images/'+id+'_'+i+'.jpg")';
+
+let btns = document.querySelector(".btns");
 
 //Кнопка покупок
 let basket = document.querySelector("#basket");
@@ -13,45 +16,35 @@ basket.addEventListener('click', function(e){
   openBasket(id);
 });
 
-let width = screen.width;
-let btns = document.querySelector(".btns");
-if(width<768){
-  btns.style.WebkitFlexDirection = "column";
-}else if (width<1280){
-    quanityRow = 10;
-    maxQuanityInRow = 4;
-}else{
-    quanityRow = 10;
-    maxQuanityInRow = 5;
+  makeHeroBtns();
 }
 
-//Текст о герое
-document.querySelector("#hero_info_text").textContent = heroes[id].info;
+function makeHeroBtns(){
 
-//Кнопка "Создатель"
-document.querySelector("#btn_maker").textContent = heroes[id].maker[0];
-document.querySelector("#btn_maker").href = heroes[id].maker[1];
+  //Текст о герое
+  document.querySelector("#hero_info_text").textContent = heroes[id].info;
 
-//Кнопка "Исполнитель"
-document.querySelector("#btn_actor").textContent = heroes[id].actor[0];
-document.querySelector("#btn_actor").href = heroes[id].actor[1];
+  //Кнопка "Создатель"
+  document.querySelector("#btn_maker").textContent = heroes[id].maker[0];
+  document.querySelector("#btn_maker").href = heroes[id].maker[1];
 
-//Кнопка "Фильм"
-document.querySelector("#btn_film").textContent = heroes[id].filmName;
-document.querySelector("#btn_film").href = heroes[id].film;
+  //Кнопка "Исполнитель"
+  document.querySelector("#btn_actor").textContent = heroes[id].actor[0];
+  document.querySelector("#btn_actor").href = heroes[id].actor[1];
 
-
+  //Кнопка "Фильм"
+  document.querySelector("#btn_film").textContent = heroes[id].filmName;
+  document.querySelector("#btn_film").href = heroes[id].film;
+}
 
 //Карусель
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }

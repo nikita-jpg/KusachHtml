@@ -1,23 +1,16 @@
-let filmsInRow = 0;
 let qurId = 0;
 let filmsInBlock = 7;
+let mainPage = document.querySelector('#mainPage');
 fillHeroesWindow();
 
 
 function fillHeroesWindow(){
   let width = screen.width;
-  if(width<768){
-    filmsInRow = 1;
-  }else if (width<1280){
-    filmsInRow = 3;
-  }else{
-    filmsInRow = 7;
-  }
-  document.body.appendChild(makeSubHeader(0));
-  addFilmBlock();
-  document.body.appendChild(makeSubHeader(1));
-  quHer = 14;
-  addFilmBlock();
+
+  mainPage.appendChild(makeSubHeader(0));
+  mainPage.appendChild(addFilmBlock());
+  mainPage.appendChild(makeSubHeader(1));
+  mainPage.appendChild(addFilmBlock());
 
     //Заполняем фильмы
     let films = document.querySelectorAll('.film');
@@ -44,36 +37,16 @@ function makeSubHeader(i){
 
 function addFilmBlock(){
   let row = document.createElement('div');
-  row.classList.add('filmRow');
-  let j = 0;
+  row.classList.add('filmBlock');
   for(let i=0;i<filmsInBlock;i++){
     row.append(getFilm(false));
-    j++;
-
-    if(j%filmsInRow == 0){
-      document.body.appendChild(row);
-      row = document.createElement('div');
-      row.classList.add("filmRow");
-    }
   }
-  if(j%filmsInRow!=0)
-  {
-    for(let i=0;i< filmsInRow - j%filmsInRow;i++)
-        row.append(getFilm(true));
-        document.body.appendChild(row);  
-  }
+  return row;
 }
 
 function getFilm(isFull){
 
   let film = document.createElement('div');
-
-  if(isFull)
-  {
-    film.style.width = "calc(100% - 20px)";
-    film.style.height = "300px";
-    return film;
-  }
   film.classList.add('film');
   film.id = qurId;
 

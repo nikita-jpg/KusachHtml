@@ -1,14 +1,6 @@
 function getWindow(){
-    let width = screen.width;
-    let localWindow = document.createElement('div');
-    if(width<768){
-        localWindow.style.width = width*0.90+"px";
-    }else if (width<1280){
-        localWindow.style.width = width*0.70+"px";
-    }else{
-        localWindow.style.width = "1000px";
-    }
 
+    let localWindow = document.createElement('div');
     //Создаём заголовок окна
     let windowTitle = document.createElement('div');
 

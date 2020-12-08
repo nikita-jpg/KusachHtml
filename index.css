@@ -1,16 +1,29 @@
 html, body {padding:0; margin:0;}
 
 body{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   background-color: #101010;
-
-  overflow-x: hidden;
 }
-
+body{
+    background-color: #101010;
+    padding-right: 8px;
+  }
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background: #333a47;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background: #4A5CD9;
+  }
 header{
+  position: fixed;
+  top: 0;  
+  z-index: 100;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -27,13 +40,20 @@ header{
   font-family: var(--font);
   font-size: 2rem;
 }
+
+#mainPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
 .subHeader{
   margin-bottom: 4px;
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
   height: 40px;
-  width: 100%;
+  width: calc(100% - 20px);
   max-width: 1700px;
   background: var(--black);
 
@@ -45,15 +65,16 @@ header{
   padding-left: 20px;
 }
 
+.filmBlock{
+  display: grid;
+  justify-content: center;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-rows: repeat(auto-fit, 300px);
 
-.filmRow{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
   width: 100%;
   max-width: 1700px;
-  height: 300px;
-  margin-top: 5px;
 }
 .film{
   display: flex;
