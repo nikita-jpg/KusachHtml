@@ -5,7 +5,7 @@ fillHeroesWindow();
 
 
 function fillHeroesWindow(){
-
+  mainPage.appendChild(getMainHeader());
   mainPage.appendChild(getSubHeader(0));
   mainPage.appendChild(getFilmBlock());
   mainPage.appendChild(getSubHeader(1));
@@ -15,7 +15,6 @@ function fillHeroesWindow(){
     let films = document.querySelectorAll('.film');
     for(let i=0; i < films.length; i++){
       films[i].style.backgroundImage = "url('images/"+i+".jpg')";
-      films[i].childNodes[0].textContent = heroes[i].filmName;
       films[i].childNodes[1].textContent = heroes[i].name;
       films[i].addEventListener('click', function(e){     
           let id = e.target.id; 
