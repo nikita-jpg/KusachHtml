@@ -1,4 +1,9 @@
 *{padding:0; margin:0;}
+:root{
+    --burgerTime: 1s;
+}
+
+
 .mainHeader{
     position: fixed;
     top: 0;  
@@ -32,38 +37,81 @@
     cursor: pointer;
   }
 .mainHeaderMenu{
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: auto;
     display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: transparent;
     border: none;
 }
+
+/* Бургер */
 #burgerLable{
-    width: 36px;
-    height: 32px;
-    background-image: url("../svg/arrow.svg");
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     color: transparent;
-    box-shadow: none;
+    background-color: black;
+}
+#burgerIcon{
+    width: 36px;
+    height: 32px;
+    background-image: url('../svg/arrow.svg');
+    transition: var(--burgerTime) all;
 }
 #burgerCheck{
     display: none;
 }
-#burgerCheck:checked ~ #burgerLable {
-    animation: pressed 2s;
+
+
+#burgerList{
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    height: 80px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
+    transition: var(--burgerTime) all;
+}
+.burgerLine{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    border: none;
+}
+.burgerLink{
+    display: inline-block;
+    width: 100%;
+    height: 0px;
+    color: var(--white);
+    font-family: var(--font);
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
+.burgerLine:active{
+    background-color: var(--blue_hover);
+}
+.burgerLine:focus{
+    outline: 0;
+}
 
-@keyframes pressed {
-    0% {
-    }
-    100% {
-        transform: rotateZ(180deg);
-    }
-  }
-
+/* Анимации */
+#burgerIcon.burgerAnimIcon{
+    transform: rotateZ(180deg);
+}
+#burgerList.burgerAnimList{
+    top: 50px;
+}
 
 
 

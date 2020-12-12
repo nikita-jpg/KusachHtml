@@ -21,6 +21,8 @@ function getMainHeader(){
     mainHeaderTitle.appendChild(titleText);
     mainHeader.appendChild(mainHeaderTitle);
 
+
+
     //Меню
     let mainHeaderMenu = document.createElement('div');
     mainHeaderMenu.classList.add('mainHeaderMenu');
@@ -28,11 +30,52 @@ function getMainHeader(){
     burgerCheck.type = 'checkbox';
     burgerCheck.id = "burgerCheck";
 
+    //label
     burgetLabel = document.createElement('label');
     burgetLabel.htmlFor = 'burgerCheck';
     burgetLabel.id = 'burgerLable';
+    burgetLabel.addEventListener('click', function(e){  
+        // alert("f");
+        if(burgerCheck.checked != true)
+        {
+            document.querySelector('#burgerIcon').classList.toggle('burgerAnimIcon');
+            document.querySelector('#burgerList').classList.toggle('burgerAnimList');
+        }
+        else
+        {
+            document.querySelector('#burgerIcon').classList.remove('burgerAnimIcon');
+            document.querySelector('#burgerList').classList.remove('burgerAnimList');
+        }
+            
+    });
+
+    //icon
+    burgerIcon = document.createElement('logo');
+    burgerIcon.id = 'burgerIcon';
+    burgetLabel.appendChild(burgerIcon);
+
+    //list
+    burgerList = document.createElement('div');
+    burgerList.id = 'burgerList';
+
+
+    let names = ['Киногерои','Кинопары'];
+    let links = ['index.html','cinemaPair.html'];
+    for(let i=0;i<2;i++){
+        burgerLine = document.createElement('Button');//Создаём пункт меню
+        burgerLine.classList.add('burgerLine');//Создаём пункт меню
+        burgerLink = document.createElement('a');
+        burgerLink.classList.add('burgerLink')//Создаём ссылку
+        burgerLink.textContent = names[i];
+        burgerLink.href = links[i];
+        burgerLine.appendChild(burgerLink)
+        burgerList.appendChild(burgerLine);
+    }
+
+    //Добавляем всё в меню
     mainHeaderMenu.appendChild(burgerCheck);
     mainHeaderMenu.appendChild(burgetLabel);
+    mainHeader.appendChild(burgerList);
     mainHeader.appendChild(mainHeaderMenu);
     
 
