@@ -75,7 +75,7 @@ function getMainHeader(){
     //Добавляем всё в меню
     mainHeaderMenu.appendChild(burgerCheck);
     mainHeaderMenu.appendChild(burgetLabel);
-    mainHeader.appendChild(burgerList);
+    mainHeaderMenu.appendChild(burgerList);
     mainHeader.appendChild(mainHeaderMenu);
     
 
