@@ -2,6 +2,7 @@ let myBackground;
 let myWindow;  
 qurSouvNum = 0;
 quanElem = 14;
+let prefixSouv = '../';
 
 function fillSouvWindow(persId){
     myWindow.querySelector(".dialog_title").querySelector("p").textContent="Сувениры";

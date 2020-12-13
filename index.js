@@ -19,7 +19,7 @@ function fillHeroesWindow(){
       films[i].addEventListener('click', function(e){     
           let id = e.target.id; 
           localStorage.setItem("id",id);
-          document.location.href='hero.html';
+          document.location.href='hero/hero.html';
         });
   }
 

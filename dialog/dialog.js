@@ -7,7 +7,7 @@ function getWindow(){
     let windowTitleText = document.createElement('p');
 
     let windowTitleClose = document.createElement('img');
-    windowTitleClose.src = "svg/close.svg";
+    windowTitleClose.src = "../svg/close.svg";
 
     let windowTitlePlug = document.createElement('div');
     windowTitlePlug.style.width = "24px";

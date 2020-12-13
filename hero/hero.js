@@ -1,4 +1,5 @@
 let id = localStorage.getItem("id");
+let prefix = '../';
 
 fillHeroWindow();
 
@@ -6,7 +7,7 @@ function fillHeroWindow(){
 document.querySelector("#title").textContent = heroes[id].name;
 images = document.querySelectorAll(".photo");
 for(let i=0;i<images.length; i++)
-  images[i].style.backgroundImage = 'url("images/'+id+'_'+i+'.jpg")';
+  images[i].style.backgroundImage = 'url("../images/'+id+'_'+i+'.jpg")';
 
 let btns = document.querySelector(".btns");
 
