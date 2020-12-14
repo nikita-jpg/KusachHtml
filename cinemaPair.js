@@ -9,13 +9,13 @@ function createCinemaPair(){
     //Заполняем пары
     let pairs = document.querySelectorAll('.pair');
     for(let i=0; i < pairs.length; i++){
-        pairs[i].style.backgroundImage = "url('images_pair/"+i+".jpg')";
+        pairs[i].style.backgroundImage = "url('pair/images_pair/"+i+".jpg')";
         pairs[i].childNodes[0].childNodes[0].textContent = pairsList[i][0];
         pairs[i].childNodes[0].childNodes[2].textContent = pairsList[i][1];
         pairs[i].addEventListener('click', function(e){     
             let id = e.target.id; 
             localStorage.setItem("id",id);
-            document.location.href='hero/hero.html';
+            document.location.href='pair/pair.html';
         });
     }
 
