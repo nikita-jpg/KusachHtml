@@ -174,14 +174,12 @@ header{
 }
 .btn a{
     border-radius: 4px;
-    padding: 15px;
     text-decoration: none;
     text-align: center;
     color: var(--blue_hover);
 }
 .btn a:hover{
-    background-color: var(--blue);
-    color: var(--white);
+    color: var(--blue);
 }
 @media only screen and (min-width : 280px) and (max-width : 480px) {
     .btns{
