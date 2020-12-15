@@ -13,7 +13,7 @@ function createCinemaPair(){
         pairs[i].childNodes[0].childNodes[0].textContent = pairsList[i][0];
         pairs[i].childNodes[0].childNodes[2].textContent = pairsList[i][1];
         pairs[i].addEventListener('click', function(e){     
-            let id = e.target.id; 
+            let id = e.currentTarget.id; 
             localStorage.setItem("id",id);
             document.location.href='pair/pair.html';
         });
