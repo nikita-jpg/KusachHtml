@@ -2,11 +2,11 @@ let numInList = 0;
 
 fillPairWindow();
 
-function fillPairWindow(id){
+function fillPairWindow(){
     document.querySelector("#title").textContent = "История противостояния";
 
     for(let i=0;i<pairInfoList.length;i++){
-        if(pairInfoList[i].id == id)
+        if(pairInfoList[i].id == localStorage.getItem('id'))
             numInList = i;
     }
 
