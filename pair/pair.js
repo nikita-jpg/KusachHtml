@@ -12,7 +12,7 @@ function fillPairWindow(id){
 
     for(let i=0;i<pairInfoList[numInList].array.length;i++){
         let block = getBlock();
-        block.childNodes[0].textContent = pairInfoList[numInList].array[i][0];
+        block.childNodes[0].firstChild.textContent = pairInfoList[numInList].array[i][0];
         block.childNodes[1].firstChild.src = pairInfoList[numInList].array[i][1];
         block.childNodes[2].firstChild.textContent = pairInfoList[numInList].array[i][2];
         document.querySelector("#pairContent").appendChild(block);
@@ -29,6 +29,8 @@ function getBlock(){
     //Создаём заголовок
     let title = document.createElement('div');
     title.classList.add('title');
+    let articleTitle = document.createElement('p');
+    title.appendChild(articleTitle);
 
     //Создаём картинку
     let img_wrap = document.createElement('div');
