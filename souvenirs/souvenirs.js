@@ -33,7 +33,11 @@ function getElement(souvId)
 
     //Картинка товара
     let img = document.createElement('div');
-    img.style.backgroundImage = souvenirsList[numInList].array[qurSouvNum].img;
+    if (souvenirsList[numInList].array[qurSouvNum].img === "")
+        img.style.backgroundImage = "url('../souvenirs/souvenirs_img/sold.png')"
+    else
+        img.style.backgroundImage = souvenirsList[numInList].array[qurSouvNum].img;
+
     img.classList.add("souvenirs_img");
     element.append(img);
 
@@ -43,24 +47,34 @@ function getElement(souvId)
 
     //Цена товара
     let infoPrice = document.createElement("p");
-    infoPrice.textContent = souvenirsList[numInList].array[qurSouvNum].price;
+    if (souvenirsList[numInList].array[qurSouvNum].price === "")
+        infoPrice.textContent = "---";
+    else
+        infoPrice.textContent = souvenirsList[numInList].array[qurSouvNum].price;
     infoPrice.classList.add("souvenirs_info_price","souvenirs_p");
     info.append(infoPrice);
 
     //Описание товара
     let infoText = document.createElement("p");
-    infoText.textContent = souvenirsList[numInList].array[qurSouvNum].text;
+    if (souvenirsList[numInList].array[qurSouvNum].text === "")
+        infoText.textContent = "---";
+    else
+        infoText.textContent = souvenirsList[numInList].array[qurSouvNum].text;
     infoText.classList.add("souvenirs_info_text","souvenirs_p");
     info.append(infoText);
 
     //Кнопка купить
     let infoBuy = document.createElement("Button");
-    infoBuy.textContent = "Купить";
+    if (souvenirsList[numInList].array[qurSouvNum].price === "")
+    {
+        infoBuy.textContent = "Продано";
+    }else{
+        infoBuy.textContent = "Купить";
+        infoBuy.addEventListener('click', function(e){     
+            buy();});
+    }
     infoBuy.classList.add("souvenirs_info_buy");
-    infoBuy.addEventListener('click', function(e){     
-        buy();});
     info.append(infoBuy);
-
     element.append(info);
     qurSouvNum++
     return element;
