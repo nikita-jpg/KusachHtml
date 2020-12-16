@@ -145,10 +145,10 @@ header{
     font-family: var(--font);
     font-size: 1.5rem;
 
-    white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       
+    white-space: -moz-pre-wrap;  
+    white-space: -pre-wrap;      
+    white-space: -o-pre-wrap;    
     word-wrap: break-word; 
 }
 
@@ -187,5 +187,11 @@ header{
     }
     #title{
         font-size: 1.4rem;
+    }
+    .slideshow-container{
+        height: 400px;
+    }
+    .prev, .next{
+        line-height: 400px;
     }
 }
