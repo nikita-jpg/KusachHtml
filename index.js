@@ -17,7 +17,7 @@ function fillHeroesWindow(){
       films[i].style.backgroundImage = "url('images/"+i+".jpg')";
       films[i].childNodes[1].textContent = heroes[i].name;
       films[i].addEventListener('click', function(e){     
-          let id = e.target.id; 
+          let id = e.currentTarget.id; 
           localStorage.setItem("id",id);
           document.location.href='hero/hero.html';
         });
