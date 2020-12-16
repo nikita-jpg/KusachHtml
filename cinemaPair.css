@@ -33,8 +33,9 @@ body::-webkit-scrollbar-thumb {
     max-width: 400px;
     height: 250px;
     background-size: cover;
-    color:transparent;
-    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
   }
   
   .pair:hover{
@@ -79,5 +80,8 @@ body::-webkit-scrollbar-thumb {
   @media only screen and (min-width : 280px) and (max-width : 480px) {
     .pairBlock{
       grid-template-columns: repeat(auto-fit, 90%);
+    }
+    .pair{
+      background-size: contain;
     }
 }
