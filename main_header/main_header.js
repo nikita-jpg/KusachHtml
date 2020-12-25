@@ -21,6 +21,15 @@ function getMainHeader(){
     mainHeaderTitle.appendChild(titleText);
     mainHeader.appendChild(mainHeaderTitle);
 
+    //Кнопка "Кинопары"
+    mainHeaderTitle = document.createElement('div');
+    mainHeaderTitle.classList.add('mainHeaderTitle');
+    titleText = document.createElement('a');
+    titleText.href = "novelty.html";
+    titleText.textContent = "Новинки";
+    mainHeaderTitle.appendChild(titleText);
+    mainHeader.appendChild(mainHeaderTitle);
+
 
 
     //Меню
@@ -59,9 +68,9 @@ function getMainHeader(){
     burgerList.id = 'burgerList';
 
 
-    let names = ['Киногерои','Кинопары'];
-    let links = ['index.html','cinemaPair.html'];
-    for(let i=0;i<2;i++){
+    let names = ['Киногерои','Кинопары','Новинки'];
+    let links = ['index.html','cinemaPair.html','novelty.html'];
+    for(let i=0;i<names.length;i++){
         burgerLine = document.createElement('Button');//Создаём пункт меню
         burgerLine.classList.add('burgerLine');//Создаём пункт меню
         burgerLink = document.createElement('a');
