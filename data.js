@@ -1341,30 +1341,30 @@ let pairInfoList = [
 let noveltyList = [
     {
         name:"Ведьмы",
-        src:"none"
+        src:"https://www.youtube.com/embed/rOZfcoUhCG0"
     },
     {
-        name:"Стойкая Броня",
-        src:"none"
+        name:"Гренландия",
+        src:"https://www.youtube.com/embed/sZBM492Ufco"
     },
     {
         name:"Криминальный боссы",
-        src:"none"
+        src:"https://www.youtube.com/embed/Jc_Xh7DKbS0"
     },
     {
         name:"Инсомния",
-        src:"none"
+        src:"https://www.youtube.com/embed/lqgxCZj4lz8"
     },
     {
         name:"Самоизоляция",
-        src:"none"
+        src:"https://www.youtube.com/embed/r6nugTIcFI0"
     },
     {
         name:"Лунолет Сурикат",
-        src:"none"
+        src:"https://www.youtube.com/embed/xVTzxDNtgM8"
     },
     {
         name:"Довод",
-        src:"none"
+        src:"https://www.youtube.com/embed/C6dZA-buNCw"
     },
 ]
